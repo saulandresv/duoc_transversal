@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ 'misDatos.Title' | translate }}</ion-title>  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custom-image">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ 'misDatos.CardTitle' | translate }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">{{ 'misDatos.FirstName' | translate }}</ion-label>
+        <ion-input required="true" data-testid="firstName-input" [(ngModel)]="user.firstName" (ngModelChange)="cambiarNombre($event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{ 'misDatos.LastName' | translate }}</ion-label>
+        <ion-input required="true" data-testid="lastName-input" [(ngModel)]="user.lastName" (ngModelChange)="cambiarApellido($event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{ 'misDatos.Email' | translate }}</ion-label>
+        <ion-input required="true" data-testid="email-input" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{ 'misDatos.Address' | translate }}</ion-label>
+        <ion-input required="true" [(ngModel)]="user.address"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{ 'misDatos.SecretQuestion' | translate }}</ion-label>
+        <ion-input required="true" [(ngModel)]="user.secretQuestion"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{ 'misDatos.SecretAnswer' | translate }}</ion-label>
+        <ion-input required="true" [(ngModel)]="user.secretAnswer"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-select data-testid="educationalLevel-select" name="nivelEducacional" [label]="'misDatos.EducationLevel' | translate" labelPlacement="floating"
+            [(ngModel)]="idNivelEducacional"
+            (ngModelChange)="cambiarNivelEducacional($event)">
+          <ion-select-option *ngFor="let nivelEducacional of nivelesEducacionales" 
+            [value]="nivelEducacional.id">
+              {{nivelEducacional.nombre}}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- contraseña actual
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input required="true" type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+      -->
+      <ion-item>
+        <ion-label position="floating">{{ 'misDatos.Password' | translate }}</ion-label>
+        <ion-input required="true" data-testid="password1-input" type="password" [(ngModel)]="password1"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{ 'misDatos.RepeatPassword' | translate }}</ion-label>
+        <ion-input required="true" data-testid="password2-input" type="password" [(ngModel)]="password2"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{ 'misDatos.BirthDate' | translate }}</ion-label>
+        <ion-datetime data-testid="birthDate-input" (click)="toggleCalendar()" *ngIf="showCalendar" locale="es-Es" display-format="DD/MM/YYYY" [(ngModel)]="user.dateOfBirth"></ion-datetime>
+        <ion-input required="true" (click)="toggleCalendar()" type="text" disabled >{{ user.dateOfBirth | date:'dd-MM-yyyy' }}</ion-input> <!-- Fecha en formato dd-mm-yyyy -->
+      </ion-item>
+
+      <ion-button data-testid="update-button" expand="full" (click)="actualizarDatos()">{{ 'misDatos.ButtonUpdate' | translate }}</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

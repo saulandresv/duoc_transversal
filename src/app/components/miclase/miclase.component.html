@@ -1,0 +1,50 @@
+<ion-content>
+
+  <ion-grid style="text-align: center;" fixed *ngIf="clase" class="clase-content">
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.Campus' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.sede }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.SubjectID' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.idAsignatura }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.Section' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.seccion }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.SubjectName' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.nombreAsignatura }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.ProfessorName' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.nombreProfesor }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.Day' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.dia }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.StartBlock' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.bloqueInicio }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.EndBlock' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.bloqueTermino }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.StartTime' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.horaInicio }}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">{{ 'ClassDetails.EndTime' | translate }}</ion-col>
+      <ion-col size="7">{{ clase.horaFin }}</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div *ngIf="!clase" class="center-frame">
+    {{ 'ClassDetails.ScanQRCodePrompt' | translate }}
+  </div>
+
+</ion-content>

@@ -1,0 +1,57 @@
+/* Contenedor del título y logo */
+.header-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el logo y el texto */
+  justify-content: flex-start;
+  position: relative; /* Necesario para el posicionamiento absoluto del título */
+  overflow: hidden; /* Evita que el título se desborde */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Logo de la izquierda */
+.logo-header {
+  height: 40px; /* Ajusta el tamaño del logo */
+  margin-right: 10px; /* Espacio entre el logo y el título */
+  max-width: 50%; /* Ajusta el tamaño máximo del logo para dispositivos pequeños */
+  object-fit: contain; /* Asegura que el logo no se deforme */
+}
+
+/* Estilo del título animado */
+.animated-title {
+  display: inline-block;
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  animation: slideIn 10s linear infinite; /* Animación continua de izquierda a derecha */
+  margin: 0; /* Elimina márgenes para ajustarlo correctamente */
+  font-size: 20px; /* Tamaño del texto */
+  position: absolute; /* El título se mueve sobre el contenedor */
+  left: 100%; /* Comienza desde el borde derecho */
+}
+
+/* Definir la animación de deslizamiento */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .logo-header {
+    height: 30px; /* Reducir el tamaño del logo en pantallas pequeñas */
+  }
+
+  .animated-title {
+    font-size: 16px; /* Reducir el tamaño del texto del título */
+    left: 100%; /* Asegurarse de que el título comience fuera de la pantalla */
+    animation-duration: 12s; /* Alargar la duración de la animación para pantallas pequeñas */
+  }
+}

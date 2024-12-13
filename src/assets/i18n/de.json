@@ -1,0 +1,201 @@
+{
+  "AppName": "DUOC Anwesenheitssystem",
+  "AuthorText": "Entwickelt von:",
+  "Author": "Bastian Cabezas, Zichao Yuan, Saul Vega, Francisca Otarola, Saul Vega",
+  "Language": "Sprache",
+  "Theme": "Thema",
+  "Language.English": "Englisch",
+  "Language.Spanish": "Spanisch",
+  "Language.German": "Deutsch",
+
+  "Start.StartNewExperience": "Beginnen Sie ein neues Erlebnis",
+
+  "Login.Title.Login": "Anmelden",
+  "Login.Label.Email": "E-Mail",
+  "Login.Placeholder.Email": "Geben Sie hier Ihre E-Mail ein",
+  "Login.Label.Password": "Passwort",
+  "Login.Placeholder.Password": "Geben Sie hier Ihr Passwort ein",
+  "Login.Button.Login": "Einloggen",
+  "Login.Button.GoDuoc": "Meine DUOC-Route",
+  "Login.Button.Signin": "Registrieren",
+  "Login.Button.ForgotPassword": "Passwort vergessen",
+  "Login.Button.DarkMode": "Dunkel",
+  "Register": {
+    "Title": {
+      "Register": "Registrieren"
+    },
+    "Label": {
+      "Username": "Benutzername",
+      "Email": "E-Mail",
+      "Password": "Passwort",
+      "ConfirmPassword": "Passwort bestätigen",
+      "SecretQuestion": "Geheime Frage",
+      "SecretAnswer": "Geheime Antwort",
+      "FirstName": "Vorname",
+      "LastName": "Nachname",
+      "Education": "Bildungsweg",
+      "Address": "Adresse",
+      "BirthDate": "Geburtsdatum"
+    },
+    "Placeholder": {
+      "Username": "Gib deinen Benutzernamen ein",
+      "Email": "Gib deine E-Mail ein",
+      "Password": "Gib dein Passwort ein",
+      "ConfirmPassword": "Bestätige dein Passwort",
+      "SecretQuestion": "Gib eine geheime Frage ein",
+      "SecretAnswer": "Gib die Antwort auf deine geheime Frage ein",
+      "FirstName": "Gib deinen Vornamen ein",
+      "LastName": "Gib deinen Nachnamen ein",
+      "Address": "Gib deine Adresse ein"
+    },
+    "Button": {
+      "Register": "Registrieren",
+      "GoBack": "Zurück",
+      "Login": "Hast du schon ein Konto? Melde dich an"
+    },
+    "SuccessMessages": {
+      "RegistrationComplete": "Benutzer erfolgreich registriert."
+    },
+    "ErrorMessages": {
+      "PasswordsMismatch": "Die Passwörter stimmen nicht überein.",
+      "UsernameExists": "Der Benutzername existiert bereits.",
+      "RegistrationFailed": "Fehler bei der Registrierung des Benutzers."
+    }
+  },
+  "Register.Button.Register": "Registrieren",
+  "Register.Button.GoBack": "Zurück",
+  "Login.Button.RegisterButton": "Registrieren",
+
+  "WelcomePage.Title.Wellcome": "Willkommen im DUOCUC Anwesenheitssystem!",
+
+  "HomePage.Button.Wellcome": "Startseite",
+  "HomePage.Button.class": "Mein Kurs",
+  "HomePage.Button.Scan": "Scannen",
+  "HomePage.Button.datos": "Meine Daten",
+  "HomePage.Button.Forum": "Forum",
+
+  "ThemePage.Label.ColorTheme": "Farben Thema:",
+  "ThemePage.Color.Light": "Hell",
+  "ThemePage.Color.Dark": "Dunkel",
+  "ThemePage.Color.Green": "Grün",
+  "ThemePage.Color.Red": "Rot",
+  "ThemePage.Color.Duoc": "DUOC",
+
+  "ThemePage.Button.Primary": "Primär Button",
+  "ThemePage.Button.Secondary": "Sekundär Button",
+  "ThemePage.Button.Tertiary": "Tertiär Button",
+  "ThemePage.Button.Success": "Erfolgs Button",
+  "ThemePage.Button.Warning": "Warnungs Button",
+  "ThemePage.Button.Danger": "Gefahren Button",
+  "ThemePage.Button.Light": "Heller Button",
+  "ThemePage.Button.Dark": "Dunkler Button",
+  "ThemePage.Button.Home": "Startseite",
+  "ThemePage.Button.Logout": "Ausloggen",
+
+  "ThemePage.Card.Title": "Karten Titel",
+  "ThemePage.Card.Subtitle": "Karten Untertitel",
+  "ThemePage.Card.Content": "Dies ist der Inhalt der Karte. Sie können die Farben der Karte und deren Inhalt anpassen.",
+
+  "ThemePage.List.Title": "Listen",
+  "ThemePage.List.Item1": "Listenpunkt 1",
+  "ThemePage.List.Item2": "Listenpunkt 2",
+  "ThemePage.List.Item3": "Listenpunkt 3",
+
+  "ThemePage.Calendar.Title": "Kalender",
+
+  "ThemePage.Form.Title": "Daten Eingabe",
+  "ThemePage.Form.NameLabel": "Name",
+  "ThemePage.Form.NamePlaceholder": "Geben Sie Ihren Namen ein",
+  "ThemePage.Form.DescriptionLabel": "Beschreibung",
+  "ThemePage.Form.DescriptionPlaceholder": "Schreiben Sie hier eine Beschreibung...",
+  "ThemePage.Form.ToggleLabel": "Benachrichtigungen aktivieren",
+  "ThemePage.Form.CheckboxLabel": "Ich stimme den Bedingungen zu",
+
+  "WelcomePage": {
+  "Title": "Willkommen",
+  "Subtitle": "Scannen Sie den QR-Code",
+  "Description": "um Ihre Anwesenheit in den Kursen zu registrieren!"
+},
+
+"ForumPage": {
+  "Title": {
+    "Management": "Verwaltung von Beiträgen",
+    "RecentPosts": "Neueste Beiträge"
+  },
+  "Label": {
+    "Title": "Titel",
+    "Description": "Beschreibung"
+  },
+  "Placeholder": {
+    "Title": "Geben Sie den Titel des Beitrags ein",
+    "Description": "Schreiben Sie den Inhalt des Beitrags"
+  },
+  "Button": {
+    "Clear": "Löschen",
+    "Save": "Speichern",
+    "Update": "Aktualisieren"
+  },
+  "Post": {
+  "Prefix": "(Beitrag #{{ number }})"
+  }
+},
+"ClassDetails": {
+  "Campus": "Campus",
+  "SubjectID": "Fach-ID",
+  "Section": "Sektion",
+  "SubjectName": "Fachname",
+  "ProfessorName": "Name des Professors",
+  "Day": "Tag",
+  "StartBlock": "Startblock",
+  "EndBlock": "Endblock",
+  "StartTime": "Startzeit",
+  "EndTime": "Endzeit",
+  "ScanQRCodePrompt": "Sie müssen einen QR-Code für Ihre Klasse scannen"
+},
+"ForgotPassword": {
+    "Title": "Passwort vergessen",
+    "Step1": "Schritt 1: Geben Sie Ihre E-Mail-Adresse ein",
+    "EnterEmail": "Geben Sie Ihre E-Mail-Adresse ein",
+    "Placeholder": {
+      "Email": "Z.B.: beispiel@duocuc.cl"
+    },
+    "Button": {
+      "Recover": "Passwort wiederherstellen"
+    },
+    "BackToLogin": "Zurück zur Anmeldung"
+  },
+
+  "ForgotPassword2": {
+    "TitleStep2": "Passwort vergessen",
+    "Step2": "Schritt 2: Beantworten Sie die Sicherheitsfrage",
+    "EnterAnswer": "Geben Sie Ihre Antwort ein",
+    "Placeholder": {
+      "Answer": "Geheime Antwort"
+    },
+    "Button": {
+      "ValidateAnswer": "Antwort überprüfen"
+    },
+    "Login": "Anmelden"
+  },
+  "ErrorMessages": {
+    "InvalidData": "Entschuldigung, aber die eingegebenen Daten sind nicht korrekt!"
+  },
+  "Correct": {
+    "CorrectData": "Dein Passwort ist "
+  },
+  "misDatos": {
+     "Title": "Meine Daten",
+    "CardTitle": "Benutzerinformationen",
+    "FirstName": "Vorname",
+    "LastName": "Nachname",
+    "Email": "E-Mail",
+    "Address": "Adresse",
+    "SecretQuestion": "Geheime Frage",
+    "SecretAnswer": "Geheime Antwort",
+    "EducationLevel": "Bildung",
+    "Password": "Passwort",
+    "RepeatPassword": "Passwort wiederholen",
+    "BirthDate": "Geburtsdatum",
+    "ButtonUpdate": "Aktualisieren"
+  }
+}

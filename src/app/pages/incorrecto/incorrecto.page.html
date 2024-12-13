@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title class="ion-text-left ion-text">
+            <h3><ion-img class="logo-header" src= ..\assets\images\logo-duoc.png alt="Duoc UC"></ion-img></h3>
+      </ion-title>
+      <div slot="end">
+        <ion-button (click)="logout()" size="small" fill="clear">
+          <ion-icon name="log-out-outline" color="white">
+          </ion-icon>
+        </ion-button>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class=" background-image">
+  <br><br><br><br>
+  <ion-card class="ion-text-center ion-padding-vertical">
+    <div class="custom-image-container">
+      <ion-img src="assets/images/2.jpg" alt="Incorrecta" class="custom-image"></ion-img>
+      <p class="overlay-text">{{ mensaje }}</p>
+    </div>
+  </ion-card>
+</ion-content>
+
+  <ion-toolbar color="primary">
+      <ion-tab-button tab="login" (click)="logout()" routerLinkActive="active-tab">
+        <ion-icon name="log-in-outline"></ion-icon>
+        {{ 'ForgotPassword2.Login' | translate }}
+      </ion-tab-button>
+  </ion-toolbar>

@@ -1,0 +1,27 @@
+h2 {
+  color: rgb(150, 150, 150);
+}
+
+.background-image {
+  background-image: url("/assets/images/inicio.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+
+
+.title-card {
+  background-color: rgba(102, 102, 102, 0.5); //#666666 semi transparentado
+  margin: 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+.custom-card {
+  background-color: rgba(189, 198, 1, 0.7); //#BDC601; 
+}
+
+.ion-card {
+  background-color: rgba(189, 198, 1, 0.7); //#BDC601; 
+}

@@ -1,0 +1,61 @@
+<ion-content>
+  <a id="topOfPage" href="#topOfPage"></a>
+  <ion-card data-testid="post-form">
+    <ion-card-header>
+      <ion-card-title data-testid="form-title">{{ 'ForumPage.Title.Management' | translate }}</ion-card-title>
+      <ion-card-subtitle data-testid="form-subtitle">{{ selectedPostText }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" color="secondary" data-testid="title-label">{{ 'ForumPage.Label.Title' | translate }}</ion-label>
+        <ion-input [(ngModel)]="post.title" [placeholder]="'ForumPage.Placeholder.Title' | translate" data-testid="title-input"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="secondary" data-testid="body-label">{{ 'ForumPage.Label.Description' | translate }}</ion-label>
+        <ion-textarea [(ngModel)]="post.body" [placeholder]="'ForumPage.Placeholder.Description' | translate" data-testid="body-textarea"></ion-textarea>
+      </ion-item>
+
+      <div class="ion-text-center margin-top-6">
+        <ion-button color="medium" shape="round" (click)="cleanPost()" data-testid="clear-button">
+          {{ 'ForumPage.Button.Clear' | translate }}
+        </ion-button>
+        <ion-button color="primary" shape="round" (click)="savePost()" data-testid="save-button">
+          {{ post.id ? ('ForumPage.Button.Update' | translate) : ('ForumPage.Button.Save' | translate) }}
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Lista de publicaciones recientes -->
+  <ion-card class="sin-bordes" data-testid="recent-posts-title">
+    <ion-card-title class="con-padding-top">{{ 'ForumPage.Title.RecentPosts' | translate }}</ion-card-title>
+  </ion-card>
+
+  <ion-list data-testid="posts-list">
+    <ion-card *ngFor="let post of posts; trackBy: getPostId" data-testid="post-card">
+      <div data-testid="post-id-container" id="{{post.id}}" style="display: none;">{{post.id}}</div>
+      <div id="{{ post.id }}">
+        <ion-card-header>
+          <h6>{{ 'ForumPage.Post.Prefix' | translate:{ number: post.id } }} {{ post.author }}</h6>
+          <h4 data-testid="post-title">{{ post.title }}</h4>
+        </ion-card-header>
+    
+        <ion-card-content>
+          <p data-testid="post-body">{{ post.body }}</p>
+        </ion-card-content>
+    
+        <!-- Contenedor para alinear los botones horizontalmente a derecha -->
+        <div style="display: flex; justify-content: flex-end; gap: 10px; margin-right: 16px;">
+          <ion-button size="small" color="primary" (click)="editPost(post)" data-testid="edit-button">
+            <ion-icon name="hammer-outline"></ion-icon>
+          </ion-button>
+          <ion-button size="small" color="danger" (click)="deletePost(post)" id="delete-button">
+            <ion-icon name="trash-bin-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </ion-card>
+  </ion-list>
+</ion-content>

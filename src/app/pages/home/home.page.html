@@ -1,0 +1,37 @@
+<app-header 
+  (headerClick)="headerClick($event)">
+</app-header>
+
+<ion-content [fullscreen]="true">
+
+  <app-qrwebscanner 
+    *ngIf="selectedComponent === 'qrwebscanner'" 
+    (scanned)="webQrScanned($event)"
+    (stopped)="webQrStopped()">
+  </app-qrwebscanner >
+
+  <app-welcome 
+    *ngIf="selectedComponent === 'welcome'">
+  </app-welcome>
+
+  <app-miclase
+    *ngIf="selectedComponent === 'miclase'">
+  </app-miclase>
+
+  <app-forum 
+    *ngIf="selectedComponent === 'forum'">
+  </app-forum>
+
+  <app-misdatos 
+    *ngIf="selectedComponent === 'datos'">
+  </app-misdatos>
+
+  <app-users 
+    *ngIf="selectedComponent === 'users'">
+  </app-users>
+
+</ion-content>
+
+<app-footer
+  (footerClick)="footerClick($event)">
+</app-footer>

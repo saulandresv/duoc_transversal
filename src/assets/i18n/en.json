@@ -1,0 +1,200 @@
+{
+    "AppName": "DUOC Attendance System",
+    "AuthorText": "Developed by:",
+    "Author": "Bastian Cabezas, Zichao Yuan, Saul Vega, Francisca Otarola, Saul Vega",
+    "Language": "Language",
+    "Theme": "Theme",
+    "Language.English": "English",
+    "Language.Spanish": "Spanish",
+    "Language.German": "German",
+
+    "Start.StartNewExperience": "Start a new experience",
+
+    "Login.Title.Login": "Login",
+    "Login.Label.Email": "Email",
+    "Login.Placeholder.Email": "Enter your email here",
+    "Login.Label.Password": "Password",
+    "Login.Placeholder.Password": "Enter your password here",
+    "Login.Button.Login": "Log in",
+    "Login.Button.GoDuoc": "My DUOC route",
+    "Login.Button.Signin": "Sign up",
+    "Login.Button.ForgotPassword": "Forgot my password",
+    "Login.Button.DarkMode": "Dark",
+    "Register": {
+      "Title": {
+      "Register": "Sign Up"
+      },
+      "Label": {
+        "Username": "Username",
+        "Email": "Email",
+        "Password": "Password",
+        "ConfirmPassword": "Confirm Password",
+        "SecretQuestion": "Secret Question",
+        "SecretAnswer": "Secret Answer",
+        "FirstName": "First Name",
+        "LastName": "Last Name",
+        "Education": "Education Level",
+        "Address": "Address",
+        "BirthDate": "Date of Birth"
+      },
+      "Placeholder": {
+        "Username": "Enter your username",
+        "Email": "Enter your email",
+        "Password": "Enter your password",
+        "ConfirmPassword": "Confirm your password",
+        "SecretQuestion": "Enter a secret question",
+        "SecretAnswer": "Enter the answer to your secret question",
+        "FirstName": "Enter your first name",
+        "LastName": "Enter your last name",
+        "Address": "Enter your address"
+      },
+      "Button": {
+        "Register": "Register",
+        "GoBack": "Go Back",
+        "Login": "Already have an account? Log in"
+      },
+      "SuccessMessages": {
+      "RegistrationComplete": "User successfully registered."
+      },
+      "ErrorMessages": {
+        "PasswordsMismatch": "Passwords do not match.",
+        "UsernameExists": "The username already exists.",
+        "RegistrationFailed": "Error registering the user."
+      }
+    },
+    "Register.Button.Register": "Register",
+    "Register.Button.GoBack": "Go back",
+    "Login.Button.RegisterButton": "Register",
+
+    "WelcomePage.Title.Wellcome": "Welcome to the DUOCUC attendance system!",
+
+    "HomePage.Button.Wellcome": "Home",
+    "HomePage.Button.class": "My Class",
+    "HomePage.Button.Scan": "Scan",
+    "HomePage.Button.datos": "My data",
+    "HomePage.Button.Forum": "Forum",
+
+    "ThemePage.Label.ColorTheme": "Color Theme:",
+    "ThemePage.Color.Light": "Light",
+    "ThemePage.Color.Dark": "Dark",
+    "ThemePage.Color.Green": "Green",
+    "ThemePage.Color.Red": "Red",
+    "ThemePage.Color.Duoc": "DUOC",
+
+    "ThemePage.Button.Primary": "Primary Button",
+    "ThemePage.Button.Secondary": "Secondary Button",
+    "ThemePage.Button.Tertiary": "Tertiary Button",
+    "ThemePage.Button.Success": "Success Button",
+    "ThemePage.Button.Warning": "Warning Button",
+    "ThemePage.Button.Danger": "Danger Button",
+    "ThemePage.Button.Light": "Light Button",
+    "ThemePage.Button.Dark": "Dark Button",
+    "ThemePage.Button.Home": "Home",
+    "ThemePage.Button.Logout": "Log Out",
+
+    "ThemePage.Card.Title": "Card Title",
+    "ThemePage.Card.Subtitle": "Card Subtitle",
+    "ThemePage.Card.Content": "This is the card content. You can customize the card's colors and its content.",
+
+    "ThemePage.List.Title": "Lists",
+    "ThemePage.List.Item1": "List Item 1",
+    "ThemePage.List.Item2": "List Item 2",
+    "ThemePage.List.Item3": "List Item 3",
+
+    "ThemePage.Calendar.Title": "Calendars",
+
+    "ThemePage.Form.Title": "Data Entry",
+    "ThemePage.Form.NameLabel": "Name",
+    "ThemePage.Form.NamePlaceholder": "Enter your name",
+    "ThemePage.Form.DescriptionLabel": "Description",
+    "ThemePage.Form.DescriptionPlaceholder": "Write a description here...",
+    "ThemePage.Form.ToggleLabel": "Enable notifications",
+    "ThemePage.Form.CheckboxLabel": "I agree to the terms",
+
+    "WelcomePage": {
+  "Title": "Welcome",
+  "Subtitle": "Scan the QR",
+  "Description": "to register your attendance to classes!"
+},
+
+"ForumPage": {
+    "Title": {
+      "Management": "Post Management",
+      "RecentPosts": "Recent Posts"
+    },
+    "Label": {
+      "Title": "Title",
+      "Description": "Description"
+    },
+    "Placeholder": {
+      "Title": "Enter the title of the post",
+      "Description": "Write the content of the post"
+    },
+    "Button": {
+      "Clear": "Clear",
+      "Save": "Save",
+      "Update": "Update"
+    },
+    "Post": {
+    "Prefix": "(Post #{{ number }})"
+    }
+  },
+  "ClassDetails": {
+  "Campus": "Campus",
+  "SubjectID": "Subject ID",
+  "Section": "Section",
+  "SubjectName": "Subject Name",
+  "ProfessorName": "Professor's Name",
+  "Day": "Day",
+  "StartBlock": "Start Block",
+  "EndBlock": "End Block",
+  "StartTime": "Start Time",
+  "EndTime": "End Time",
+  "ScanQRCodePrompt": "You must scan a QR code for your class"
+},
+"ForgotPassword": {
+    "Title": "Forgot my password",
+    "Step1": "Step 1: enter your email",
+    "EnterEmail": "Enter your email",
+    "Placeholder": {
+      "Email": "Eg: example@duocuc.cl"
+    },
+    "Button": {
+      "Recover": "Recover password"
+    },
+    "BackToLogin": "Back to login"
+  },
+  "ForgotPassword2": {
+    "TitleStep2": "Forgot my password",
+    "Step2": "Step 2: Answer the secret question",
+    "EnterAnswer": "Enter your answer",
+    "Placeholder": {
+      "Answer": "Secret answer"
+    },
+    "Button": {
+      "ValidateAnswer": "Validate answer"
+    },
+    "Login": "Login"
+  },
+  "ErrorMessages": {
+    "InvalidData": "Sorry, but the data entered is not correct!"
+  },
+  "Correct": {
+    "CorrectData": "Your password is "
+  },
+  "misDatos": {
+     "Title": "My Data",
+    "CardTitle": "User Information",
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "Email": "Email",
+    "Address": "Address",
+    "SecretQuestion": "Secret Question",
+    "SecretAnswer": "Secret Answer",
+    "EducationLevel": "Education",
+    "Password": "Password",
+    "RepeatPassword": "Repeat Password",
+    "BirthDate": "Date of Birth",
+    "ButtonUpdate": "Update"
+  }
+}

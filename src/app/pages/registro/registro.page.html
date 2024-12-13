@@ -1,0 +1,153 @@
+<ion-header>
+  <ion-toolbar color="black">
+    <div slot="start" class="ion-margin">
+      <app-language #selectLanguage></app-language>
+    </div>
+    <div style= "text-align: center"  color="white" class="show-in-landscape">
+      <h3 class=""> {{ 'AppName' | translate }} </h3>
+    </div>
+    <div slot="end" class="ion-margin">
+      <ion-button color="warning" shape="round" size="small" (click)="navigateTheme()">
+        {{ 'Theme' | translate }}
+        <ion-icon slot="start" name="color-wand-outline"></ion-icon>
+      </ion-button>
+    </div>
+   </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <img class="background-image" src="/assets/images/inicio.jpg">
+  
+  <h3 style= "text-align: center" class=" normal-text show-in-portrait margin-top-6"> {{ 'AppName' | translate }} </h3>
+
+  <ion-card class="register-container">
+
+    <ion-card-header class="show-in-portrait">
+      <ion-card-title color="light" class=" ion-text-center ">
+        <h4>
+          <b>
+            {{ 'Register.Title.Register' | translate }}
+          </b>
+        </h4>
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="text-center">
+      
+      <ion-item>
+        <ion-input 
+          label="{{ 'Register.Label.Email' | translate }}" 
+          labelPlacement="floating"
+          [(ngModel)]="user.email" 
+          placeholder="{{ 'Register.Placeholder.Email' | translate }}">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input 
+          label="{{ 'Register.Label.Username' | translate }}" 
+          labelPlacement="floating"
+          [(ngModel)]="user.userName" 
+          placeholder="{{ 'Register.Placeholder.Username' | translate }}">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input 
+          label="{{ 'Register.Label.FirstName' | translate }}" 
+          labelPlacement="floating"
+          [(ngModel)]="user.firstName" 
+          placeholder="{{ 'Register.Placeholder.FirstName' | translate }}">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input 
+          label="{{ 'Register.Label.LastName' | translate }}" 
+          labelPlacement="floating"
+          [(ngModel)]="user.lastName" 
+          placeholder="{{ 'Register.Placeholder.LastName' | translate }}">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input 
+          label="{{ 'Register.Label.Address' | translate }}" 
+          labelPlacement="floating"
+          [(ngModel)]="user.address" 
+          placeholder="{{ 'Register.Placeholder.Address' | translate }}">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-select name="nivelEducacional" label="{{ 'Register.Label.Education' | translate }}" labelPlacement="floating"
+            [(ngModel)]="idNivelEducacional"
+            (ngModelChange)="cambiarNivelEducacional($event)">
+          <ion-select-option *ngFor="let nivelEducacional of nivelesEducacionales" 
+            [value]="nivelEducacional.id">
+              {{nivelEducacional.nombre}}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-input 
+          label="{{ 'Register.Label.Password' | translate }}" 
+          labelPlacement="floating"
+          [(ngModel)]="user.password" 
+          placeholder="{{ 'Register.Placeholder.Password' | translate }}"
+          type="password">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input 
+          label="{{ 'Register.Placeholder.ConfirmPassword' | translate }}"
+          labelPlacement="floating"
+          [(ngModel)]="password2" 
+          placeholder="{{ 'Register.Placeholder.ConfirmPassword' | translate }}"
+          type="password">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input 
+          label="{{ 'Register.Label.SecretQuestion' | translate }}"
+          labelPlacement="floating"
+          [(ngModel)]="user.secretQuestion"
+          placeholder="{{ 'Login.Placeholder.Password' | translate }}">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input 
+          label="{{ 'Register.Label.SecretAnswer' | translate }}"
+          labelPlacement="floating"
+          [(ngModel)]="user.secretAnswer"
+          placeholder="{{ 'Register.Placeholder.SecretAnswer' | translate }}">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">{{ 'Register.Label.BirthDate' | translate }}</ion-label>
+        <br>
+        <ion-datetime 
+          *ngIf="showCalendar" [locale]="locale" display-format="DD/MM/YYYY" 
+          [(ngModel)]="user.dateOfBirth" (click)="toggleCalendar()">
+        </ion-datetime>
+        <ion-input 
+          (click)="toggleCalendar()" type="text" [disabled]="true">
+          {{ user.dateOfBirth | date:'dd-MM-yyyy' }}
+        </ion-input> 
+      </ion-item>
+      <div class="ion-text-center margin-top-6" style="clear: both;">
+        <ion-button class="enter-button normal-text" shape="round" (click)="registerNewUser()">
+          {{ 'Register.Button.Register' | translate }}
+        </ion-button>
+      </div>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+
+  <ion-button color="primary" shape="block" (click)="login()">
+    {{ 'Register.Button.GoBack' | translate }}
+  </ion-button>
+
+</ion-footer>

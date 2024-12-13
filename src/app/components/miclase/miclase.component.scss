@@ -1,0 +1,119 @@
+/* Estilos generales */
+.user-content, .clase-content {
+  padding: 16px;
+  margin: 0 auto;
+  background-color: var(--ion-color-dark); /* Fondo oscuro */
+  color: var(--ion-color-light); /* Texto claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Diseño del grid */
+ion-grid {
+  --ion-grid-columns: 12;
+  --ion-grid-gutter: 16px;
+}
+
+/* Estilo de las filas */
+ion-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: var(--ion-color-medium); /* Fondo suave oscuro */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las columnas */
+ion-col {
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: normal;
+  color: #e0e0e0; /* Gris claro casi blanco para todo el texto */
+}
+
+/* Estilo para las letras a la izquierda (títulos) */
+ion-col:first-child {
+  color: #e0e0e0; /* Gris claro casi blanco */
+  font-weight: 600; /* Un poco más grueso para mejor legibilidad */
+}
+
+/* Modificar color de los valores */
+ion-col:last-child {
+  text-align: right;
+  color: var(--ion-color-primary); /* Resaltar valores con color primario */
+  font-weight: bold;
+}
+
+/* Estilo para el texto de "no se ha encontrado clase" */
+.center-frame {
+  text-align: center;
+  font-size: 18px;
+  color: var(--ion-color-light); /* Texto claro */
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+/* Estilo para botones */
+ion-button {
+  margin-top: 16px;
+  --background: var(--ion-color-primary); /* Botón de color primario */
+  --color: var(--ion-color-primary-contrast); /* Contraste en el texto */
+  --border-radius: 10px;
+  --padding-start: 24px;
+  --padding-end: 24px;
+  --height: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajustes para la página de usuario */
+.user-content ion-row {
+  background-color: var(--ion-color-medium); /* Fondo medio */
+  color: var(--ion-color-light); /* Texto claro */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+ion-row > ion-col:first-child {
+  font-weight: bold;
+}
+
+/* Títulos en los grids */
+ion-row > ion-col:last-child {
+  color: var(--ion-color-light); /* Texto de valores en color claro */
+  font-weight: normal;
+}
+
+/* Diseño de fondo y color de las filas */
+ion-row {
+  padding: 12px;
+  background-color: var(--ion-color-dark); /* Fondo oscuro */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 12px;
+}
+
+/* Títulos en los grids */
+ion-col:first-child {
+  color: #e0e0e0; /* Texto de títulos más claro */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+ion-col:last-child {
+  color: #e0e0e0; /* Texto de valores en color claro */
+  font-size: 16px;
+}
+
+/* Para el título de "clase no encontrada" */
+.center-frame {
+  color: var(--ion-color-warning); /* Amarillo suave para mensajes de alerta */
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+}

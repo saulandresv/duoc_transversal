@@ -1,0 +1,85 @@
+.background-image {
+  background-image: url('../../../assets/images/datos.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+/* Estilos generales de contenido de usuario */
+.user-content {
+  padding: 16px;
+  background-color: var(--ion-color-dark); /* Fondo oscuro */
+  color: #e0e0e0; /* Gris claro para texto */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+/* Diseño del grid */
+ion-grid {
+  --ion-grid-columns: 12;
+  --ion-grid-gutter: 16px;
+}
+
+/* Estilo de las filas */
+ion-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #333; /* Gris oscuro suave para contraste */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las columnas */
+ion-input {
+  font-size: 14px;
+  padding: 8px;
+  font-weight: normal;
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+/* Estilo para las etiquetas de la izquierda (títulos) */
+ion-input:first-child {
+  color: #f0f0f0; /* Gris claro casi blanco para mejor visibilidad */
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Estilo para los valores */
+ion-input:last-child {
+  color: var(--ion-color-primary-tint); /* Color ligeramente resaltado */
+  font-weight: 500;
+  text-align: right;
+}
+
+/* Ajustes adicionales para la estética */
+.user-content ion-row {
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #2a2a2a; /* Fondo ligeramente más oscuro */
+  color: #e0e0e0; /* Texto claro */
+  margin-bottom: 8px;
+}
+
+ion-row > ion-col:first-child {
+  font-weight: 600;
+  color: #d3d3d3; /* Color gris claro más claro para títulos */
+}
+
+ion-row > ion-col:last-child {
+  color: #b0c4de; /* Azul claro suave para valores */
+  font-weight: bold;
+}
+
+/* Ajustes para mejor contraste en el texto */
+ion-row {
+  padding: 10px;
+  background-color: #444444; /* Fondo oscuro moderado */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+ion-card-content {
+  padding: 50px;
+}

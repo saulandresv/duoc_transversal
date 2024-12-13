@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title class="ion-text-left ion-text">
+            <h3><img class="logo-header" src= ..\assets\images\logo-duoc.png alt="Duoc UC"></h3>
+      </ion-title>
+      <div slot="end">
+        <ion-button (click)="logout()" size="small" fill="clear">
+          <ion-icon name="log-out-outline" color="white">
+          </ion-icon>
+        </ion-button>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding-horizontal background-image">
+  <br>
+  <br>
+  <ion-card class="ion-text-center ion-padding-vertical">
+    <h2>{{ 'ForgotPassword2.TitleStep2' | translate }}</h2>
+    <p>{{ 'ForgotPassword2.Step2' | translate }}</p>
+    <ion-label>
+      <h2 style="display: inline;">{{ usuario?.firstName || 'N' }}</h2>
+      <h2 style="display: inline; margin-left: 8px;">{{ usuario?.lastName || 'N' }}</h2>
+    </ion-label>
+    <ion-card-subtitle>{{ usuario?.secretQuestion || 'Pregunta no disponible' }}</ion-card-subtitle>    
+    <ion-item>
+      <ion-label position="floating">{{ 'ForgotPassword2.EnterAnswer' | translate }}</ion-label>
+      <br>
+      <ion-input type="text" [(ngModel)]="respuesta" [placeholder]="'ForgotPassword2.Placeholder.Answer' | translate"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col size="12"> 
+        <ion-button expand="full" (click)="validarRespuestaSecreta()"> {{ 'ForgotPassword2.Button.ValidateAnswer' | translate }} </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-label>
+    <br>
+    <div class="ion-text-center">
+    </div>
+  </ion-label>
+</ion-content>
+
+  <ion-toolbar color="primary">
+    <ion-tab-button tab="login" (click)="logout()" routerLinkActive="active-tab">
+      <ion-icon name="log-in-outline"></ion-icon>
+      {{ 'ForgotPassword2.Login' | translate }}
+    </ion-tab-button>
+  </ion-toolbar>
+
+
+<!--<ion-row>
+  <ion-col size="12">
+    <ion-button expand="full" (click)="validarRespuestaSecreta()">Validar respuesta</ion-button>
+  </ion-col>
+</ion-row>-->

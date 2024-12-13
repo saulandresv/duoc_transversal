@@ -1,0 +1,52 @@
+.background-image {
+  background-image: url('../../../assets/images/maipu.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+ion-card {
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto; 
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; 
+  overflow: hidden; 
+}
+
+.custom-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: right center; 
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.0rem;
+  text-align: left;
+  max-width: 40%;
+  word-wrap: break-word;
+}
+
+
+
+.title-card {
+  background-color: rgba(102, 102, 102, 0.5); //#666666 semi transparentado
+  margin: 10px;
+  border-radius: 20px;
+  color: white;
+}

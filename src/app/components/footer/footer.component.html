@@ -1,0 +1,36 @@
+<ion-footer>
+  <ion-toolbar color="primary" style="padding-bottom: 4px">
+    <ion-segment 
+      value="welcome" 
+      (ionChange)="sendClickEvent($event)"
+      [(ngModel)]="selectedButton"
+    >
+      <ion-segment-button value="welcome">
+        <ion-icon name="home-outline"></ion-icon>
+        {{ "HomePage.Button.Wellcome" | translate }}
+      </ion-segment-button>
+
+      <ion-segment-button *ngIf="user.role === 'user'" value="miclase">
+        <ion-icon name="desktop-outline"></ion-icon>
+        {{ "HomePage.Button.class" | translate }}
+      </ion-segment-button>
+
+      <ion-segment-button id="forum" value="forum">
+        <ion-icon name="pencil-outline"></ion-icon>
+        {{ "HomePage.Button.Forum" | translate }}
+      </ion-segment-button>
+
+      <ion-segment-button id="misdatos" value="datos">
+        <ion-icon name="person-outline"></ion-icon>
+        {{ "HomePage.Button.datos" | translate }}
+      </ion-segment-button>
+
+      <ion-segment-button *ngIf="user.role === 'admin'" value="users">
+        <ion-icon name="person-outline"></ion-icon>
+        Usuarios
+      </ion-segment-button>
+
+    </ion-segment>
+
+  </ion-toolbar>
+</ion-footer>

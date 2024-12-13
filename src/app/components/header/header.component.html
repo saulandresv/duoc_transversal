@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-left">
+      <div class="header-container">
+        <!-- Logo de la izquierda -->
+        <img class="logo-header" src="..\assets\images\logo-duoc.png" alt="Duoc UC">
+        <!-- Título desplazándose -->
+        <h3 class="animated-title">Sistema de Asistencia DUOC</h3>
+      </div>
+    </ion-title>
+
+    <div slot="end">
+      <ion-button *ngIf="user.role === 'user'" (click)="sendClickEvent('scan')" size="small" fill="clear">
+        <ion-icon name="qr-code-outline" color="light"></ion-icon>
+      </ion-button>
+
+      <ion-button id="logout-button" (click)="logout()" size="small" fill="clear">
+        <ion-icon name="log-out-outline" color="light"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>

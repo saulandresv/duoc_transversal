@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let user of users">
+      <ion-card-header>
+        <ion-card-title>{{ user.firstName }} {{ user.lastName }}</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <p>Usuario: {{ user.userName }}</p>
+        <p>Usuario: {{ user.password }}</p>
+
+        <p>Correo: {{ user.email }}</p>
+      </ion-card-content>
+
+      <ion-button *ngIf="user.role === 'user'" expand="block" fill="outline" color="danger" (click)="deleteUser(user.userName)">
+        Eliminar
+      </ion-button>
+    </ion-card>
+  </ion-list>
+  <br>
+  <br>
+</ion-content>
